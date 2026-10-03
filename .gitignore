@@ -1,0 +1,53 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Terraform plan files
+*.tfplan
+*.tfplan.json
+plan.out
+
+# Variable files containing secrets
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Secrets / credentials
+*.pem
+*.key
+*.pfx
+*.crt
+.env
+.env.*
+
+# Azure CLI / local credentials
+.azure/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# OS / temporary files
+*.tmp
+*.temp
+*.log
+
+# Backup files
+*.bak
+*~
+.terraform
