@@ -6,9 +6,10 @@ terraform {
     }
 
 
+}
+
 terraform {
   backend "azurerm" {}
-}
 
   }
 }
@@ -21,3 +22,4 @@ resource "azurerm_resource_group" "rg1" {
   name     = "RG-YAML03"
   location = "Central India"
 }
+
