@@ -11,6 +11,7 @@ terraform {
     storage_account_name = "adoyamlstorage1"
     container_name       = "yamladopipelinecont"
     key                  = "yaml_pipeline.tfstate"
+    use_azuread_auth=true
   }
 }
 
