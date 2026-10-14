@@ -14,38 +14,38 @@ stages:
           provider: 'azurerm'
           command: 'init'
           backendServiceArm: 'ADO-YAML-service-connection'
-          backendAzureRmStorageAccountName: 'adoyamlstorage1'
-          backendAzureRmContainerName: 'yamladopipelinecont'
-          backendAzureRmKey: 'XTlCNLdtU9WFafgBpP0RNuqrHW7/w7kNHXREL2wZJaD8XDCJ9SMRkY5Os/I9Rj0xiIuOVuHMcZpK+AStjXynWA=='
-  - stage: Terraform_validate
-    displayName: Terraform_validate
-    jobs: 
-    - job: terraform_validate
-      displayName: 'Terraform_validate'
-      steps: 
-      - task: TerraformTask@5
-        inputs:
-          provider: 'azurerm'
-          command: 'init'
-          backendServiceArm: 'ADO-YAML-service-connection'
-          backendAzureRmStorageAccountName: 'adoyamlstorage1'
-          backendAzureRmContainerName: 'yamladopipelinecont'
-          backendAzureRmKey: 'XTlCNLdtU9WFafgBpP0RNuqrHW7/w7kNHXREL2wZJaD8XDCJ9SMRkY5Os/I9Rj0xiIuOVuHMcZpK+AStjXynWA=='
-      - task: TerraformTask@5
-        inputs:
-          provider: 'azurerm'
-          command: 'validate'
-  - stage: Terraform_plan
-    displayName: Terraform_plan
-    jobs:
-    - job: Terraform_plan
-      displayName: Terraform_plan
-      steps:
-      - task: TerraformTask@5
-        inputs:
-          provider: 'azurerm'
-          command: 'init'
-          backendServiceArm: 'ADO-YAML-service-connection'
-          backendAzureRmStorageAccountName: 'ADO-YAML-service-connection'
-          backendAzureRmContainerName: 'adoyamlstorage1'
-          backendAzureRmKey: 'XTlCNLdtU9WFafgBpP0RNuqrHW7/w7kNHXREL2wZJaD8XDCJ9SMRkY5Os/I9Rj0xiIuOVuHMcZpK+AStjXynWA=='
+          backendAzureRmStorageAccountName: 'pipelinestorageb18g98'
+          backendAzureRmContainerName: 'b18g98container'
+          backendAzureRmKey: 'KVcdrzdvm4Hu+Hjx2FQH+4PyMsJj6KOYcITYSrKGX8Xi6nsf3Rnl6PfjuW7CrfXn61nGHPC0razA+AStVZxnhA=='
+  # - stage: Terraform_validate
+  #   displayName: Terraform_validate
+  #   jobs: 
+  #   - job: terraform_validate
+  #     displayName: 'Terraform_validate'
+  #     steps: 
+  #     - task: TerraformTask@5
+  #       inputs:
+  #         provider: 'azurerm'
+  #         command: 'init'
+  #         backendServiceArm: 'ADO-YAML-service-connection'
+  #         backendAzureRmStorageAccountName: 'adoyamlstorage1'
+  #         backendAzureRmContainerName: 'yamladopipelinecont'
+  #         backendAzureRmKey: 'XTlCNLdtU9WFafgBpP0RNuqrHW7/w7kNHXREL2wZJaD8XDCJ9SMRkY5Os/I9Rj0xiIuOVuHMcZpK+AStjXynWA=='
+  #     - task: TerraformTask@5
+  #       inputs:
+  #         provider: 'azurerm'
+  #         command: 'validate'
+  # - stage: Terraform_plan
+  #   displayName: Terraform_plan
+  #   jobs:
+  #   - job: Terraform_plan
+  #     displayName: Terraform_plan
+  #     steps:
+  #     - task: TerraformTask@5
+  #       inputs:
+  #         provider: 'azurerm'
+  #         command: 'init'
+  #         backendServiceArm: 'ADO-YAML-service-connection'
+  #         backendAzureRmStorageAccountName: 'ADO-YAML-service-connection'
+  #         backendAzureRmContainerName: 'adoyamlstorage1'
+  #         backendAzureRmKey: 'XTlCNLdtU9WFafgBpP0RNuqrHW7/w7kNHXREL2wZJaD8XDCJ9SMRkY5Os/I9Rj0xiIuOVuHMcZpK+AStjXynWA=='
