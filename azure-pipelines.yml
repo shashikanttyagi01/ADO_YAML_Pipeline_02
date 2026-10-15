@@ -13,6 +13,7 @@ stages:
         inputs:
           provider: 'azurerm'
           command: 'init'
+          commandOptions: '-backend-config="storage_account_name=pipelinestorageb18g98" -backend-config="container_name=b18g98container" -backend-config="key=ADO-YAML.tfstate"'
           backendServiceArm: 'ADO-YAML-Backend'
           backendAzureRmStorageAccountName: 'pipelinestorageb18g98'
           backendAzureRmContainerName: 'b18g98container'
