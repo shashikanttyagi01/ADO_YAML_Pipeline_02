@@ -13,10 +13,10 @@ stages:
         inputs:
           provider: 'azurerm'
           command: 'init'
-          backendServiceArm: 'ADO-YAML-service-connection'
+          backendServiceArm: 'ADO-YAML-Backend'
           backendAzureRmStorageAccountName: 'pipelinestorageb18g98'
           backendAzureRmContainerName: 'b18g98container'
-          backendAzureRmKey: 'KVcdrzdvm4Hu+Hjx2FQH+4PyMsJj6KOYcITYSrKGX8Xi6nsf3Rnl6PfjuW7CrfXn61nGHPC0razA+AStVZxnhA=='
+          backendAzureRmKey: 'ADO-YAML.tfstate'
   # - stage: Terraform_validate
   #   displayName: Terraform_validate
   #   jobs: 
