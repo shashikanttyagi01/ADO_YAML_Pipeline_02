@@ -7,11 +7,11 @@ terraform {
   }
 
     backend "azurerm" {
-    resource_group_name  = "ADO-RG"
-    storage_account_name = "adoyamlstorage1"
-    container_name       = "yamladopipelinecont"
-    key                  = "yaml_pipeline.tfstate"
-    use_azuread_auth=true
+    resource_group_name  = "DonotDeleteRG"
+    storage_account_name = "pipelinestorageb18g98"
+    container_name       = "b18g98container"
+    key                  = "ADO-YAML.tfstate"
+    
   }
 }
 
